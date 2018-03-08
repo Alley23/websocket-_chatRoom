@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        border:0;
+    }
+    ol, ul ,li{list-style: none;}
+    html, body{
+        width: 100%;
+        height: 100%;
+        background-color: #999;
+    }
+    .log{
+        width: 350px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background-color: #fff;
+        padding: 40px 30px 60px 30px;
+        top: 50%;
+        -webkit-transform: translate(0, 50%);
+           -moz-transform: translate(0, 50%);
+            -ms-transform: translate(0, 50%);
+             -o-transform: translate(0, 50%);
+                transform: translate(0, 50%);
+    }
+    .log input{
+        border: none;
+        outline: none;
+        border: 1px solid #26303e;
+        border-radius: 50px;
+        width: 100%;
+        height: 50px;
+        display: block;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    .log input[name="user"]{
+        margin-bottom: 40px;
+        color: #26303e;
+        line-height: 48px;
+        padding-left: 25px;
+    }
+    </style>
+</head>
+<body>
+    <div class="log">
+        <form action="/check" method="get" accept-charset="utf-8">
+            <input type="text" name="user" value="" id="user" placeholder="请填写昵称">
+            <input type="submit" id="btn" value="进入聊天室">
+        </form>
+    </div>
+</body>
+</html>
